@@ -1,4 +1,5 @@
-from <AWS_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/amcart-base:latest
+# from <AWS_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/amcart-base:latest
+from 390844763606.dkr.ecr.ap-south-1.amazonaws.com/amcart-base:latest
 #from python:3.8
 
 MAINTAINER Nagarro<admin@nagarro.com>
