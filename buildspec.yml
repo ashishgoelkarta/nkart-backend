@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Build Dev prepare on `date`
       - echo "Logging in to Amazon ECR... some env variable $IMAGE_REPO_NAME and account id $AWS_ACCOUNT_ID and image tag $IMAGE_TAG"
-      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 390844763606.dkr.ecr.ap-south-1.amazonaws.com
       - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
       - IMAGE_TAG_VERSION=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
   build:
