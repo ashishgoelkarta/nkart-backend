@@ -27,7 +27,7 @@
     "FARGATE"
   ],
   "networkMode": "awsvpc",
-  "memory": "8192",
+  "memory": "16384",
   "cpu": "4096",
   "family": "<TASK_DEFINITION_FAMILY>"
 }
